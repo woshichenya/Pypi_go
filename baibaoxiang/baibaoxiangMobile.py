@@ -26,16 +26,14 @@ class MGO():
     bug_num=0
 
     '''封装wechat方法'''
-    def go(self):
+    def go(self,mobile_name,android_lv,platformName_system_type,appPackage="com.tencent.mm",appActivity="com.tencent.mm.ui.LauncherUI",PC_ip='127.0.0.1',PC_port='4723'):
         MGO.bug_num=0
         desired_caps = {}
-
         desired_caps = {
             'platformName': 'Android',
             'platformVersion': '5.1.1',
             # 'platformVersion': '7.0',
             # 'deviceName': 'emulator-5554',
-
             'deviceName': 'freeme-4g-868607020470921',
             #'deviceName': '10.130.33.130:5555',
             # 'deviceName': 'mi_5s-66680442',
@@ -47,25 +45,24 @@ class MGO():
             'chromeOptions': {'androidProcess': 'com.tencent.mm:tools'}
         }
         desired_caps = {
-            'platformName': 'Android',
-            'platformVersion': '5.1',
-            # 'platformVersion': '4.4.2',
-            # 'deviceName': '127.0.0.1:62001',
-            #'deviceName': '10.130.33.11:5555',
-            'deviceName': '10.130.32.191:5555',
+            'platformName': platformName_system_type,
+            'platformVersion':android_lv,
+            'deviceName':mobile_name,
             'unicodeKeyboard': True,
             'resetKeyboard': True,
             'noReset': True,
-            'appPackage': 'com.tencent.mm',
-            'appActivity': 'com.tencent.mm.ui.LauncherUI',
+            'appPackage': appPackage,
+            'appActivity': appActivity,
             'chromeOptions': {'androidProcess': 'com.tencent.mm:tools'}
         }
         '''开始启动程序'''
+        PC='http://'+PC_ip+':'+PC_port+'/wd/hub'
         i=1
         go=1
         while go==1 and i<60:
             try:
-                self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
+                # self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
+                self.driver = webdriver.Remote(PC,desired_caps)
                 #self.driver = webdriver.Remote('http://127.0.0.1:5555/wd/hub', desired_caps)
                 print("启动手机程序打开微信")
                 self.driver.implicitly_wait(5)
