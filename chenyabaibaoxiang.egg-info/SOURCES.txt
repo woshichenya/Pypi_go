@@ -6,6 +6,7 @@ baibaoxiang/baibaoxiangMobile.py
 baibaoxiang/excel.py
 baibaoxiang/excel_xlwt.py
 baibaoxiang/femail.py
+baibaoxiang/image.py
 baibaoxiang/sql.py
 baibaoxiang/sys_powel.py
 baibaoxiang/xingneng.py
