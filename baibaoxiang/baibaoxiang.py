@@ -657,7 +657,8 @@ class geturl():
         self.chenggong=chenggong
         self.shibai=shibai
         xs = 1
-        while xs < Time:
+        xx=1
+        while xs < Time and xx==1:
             try:
                 aa = geturl.llq.find_elements_by_link_text(self.shuxing)
                 print("共有",len(aa),"个",self.shuxing,"控件")
@@ -670,7 +671,7 @@ class geturl():
                             except:
                                 ixs.send_keys(Keys.ENTER)
                             print(self.chenggong)
-                            xs = 32
+                            xx = 2
                             break
                 else:
                     print(self.mingcheng, "未找到，执行等待操作")
@@ -690,7 +691,8 @@ class geturl():
         self.chenggong=chenggong
         self.shibai=shibai
         xs = 1
-        while xs < Time:
+        xx=1
+        while xs < Time and xx==1:
             try:
                 aa = geturl.llq.find_elements_by_link_text(self.shuxing)
                 print("共有",len(aa),"个",self.shuxing,"控件")
@@ -700,7 +702,7 @@ class geturl():
                             print(self.mingcheng, "存在，执行下一步")
                             ixs.send_keys(Keys.ENTER)
                             print(self.chenggong)
-                            xs = 32
+                            xx = 2
                             break
                 else:
                     print(self.mingcheng, "未找到，执行等待操作")
