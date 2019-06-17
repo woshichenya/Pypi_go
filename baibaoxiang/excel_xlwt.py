@@ -2,6 +2,9 @@ import xlwt
 import time
 #只能写不能读
 class a:
+    """
+    不满足使用标准
+    """
     biaoti=["接口名称","接口地址","接口参数","响应状态","返回值"]
     book = xlwt.Workbook()  # 新建一个excel
     sheet1 = book.add_sheet('case1_sheet')#添加一个sheet页
@@ -37,3 +40,5 @@ class a:
         else:
             a.book.save(address + tt + name+"运行结果.xls")  # 保存到当前目录下
 
+if __name__ == "__main__":
+    print("这个已不用")

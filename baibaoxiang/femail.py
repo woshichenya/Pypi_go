@@ -61,11 +61,12 @@ class email():
                 print(ee)
 
 
-# youjian=["chenjunya@vdongchina.com","mengwenhao@vdongchina.com"]
-# try:
-#     a="ss"
-#     int(a)
-# except Exception as e:
-#     email("ssssss:<br>%s"%{e},"html","","chenjunya@vdongchina.com")
 
-#email("sss","html","")
+if __name__ == "__main__":
+    youjian=["chenjunya@vdongchina.com"]
+    try:
+        a="ss"
+        int(a)
+    except Exception as e:
+        email("ssssss:<br>%s"%{e},"html","","chenjunya@vdongchina.com")
+

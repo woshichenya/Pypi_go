@@ -2,6 +2,9 @@ import psutil
 import os
 import time
 class powel_go:
+    """
+    只显示一次，在服务器运行时，写个定时文件，或者shell脚本持续运行
+    """
     def print_cpu(self):
         # print("cpu个数:\t",psutil.cpu_count())
         m_all = psutil.virtual_memory().total / 1024 / 1024
@@ -32,3 +35,5 @@ class powel_go:
         return all
 
 
+if __name__ == "__main__":
+    powel_go().print_cpu()

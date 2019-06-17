@@ -12,6 +12,9 @@ import pytesseract
 
 
 class MGO():
+    """
+    调用方法go起步
+    """
     #1111111111111111111
     '''定义会员折扣信息'''
     huiyuan_zehou = {
@@ -26,7 +29,25 @@ class MGO():
     bug_num=0
 
     '''封装wechat方法'''
-    def go(self,mobile_name,android_lv,platformName_system_type,appPackage="com.tencent.mm",appActivity="com.tencent.mm.ui.LauncherUI",PC_ip='127.0.0.1',PC_port='4723'):
+    def go(
+            self,mobile_name,
+            android_lv=9,
+            platformName_system_type="Android",
+            appPackage="com.tencent.mm",
+            appActivity="com.tencent.mm.ui.LauncherUI",
+            PC_ip='127.0.0.1',PC_port='4723'
+    ):
+        """
+
+        :param mobile_name: mobile的名字；；；
+        :param android_lv:android版本,默认为9；；；
+        :param platformName_system_type: 系统类型，默认为android；；；
+        :param appPackage:包名，默认为微信的包；；；
+        :param appActivity:接口名，以此为指针操作指定app，默认为微信接口；；；
+        :param PC_ip:执行设备的id，默认为本机执行，这里填写那个ip就会调用那个ip上的服务；；；
+        :param PC_port:服务端接口，默认为4723；；；
+        :return:
+        """
         MGO.bug_num=0
         desired_caps = {}
         desired_caps = {
@@ -375,3 +396,6 @@ class MGO():
             print("手机连接出现问题")
     def bug_num_new(self):
         return MGO.bug_num
+
+if __name__ == "__main__":
+    MGO().go("7&1c3e0558&0&0001")

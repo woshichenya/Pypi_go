@@ -32,12 +32,15 @@ class sql:
         db.close()
         return data_all
 
-# sql_yuju="SELECT * FROM `ceshi_xinxi`"
-# sql_yuju2="SELECT *,sum(id) as '合计',COUNT(id) as '总人数' FROM `ceshi_xinxi`"
-# sql_yuju3="SELECT a.`name` as 'name' , a.age as '姓名',a.sex as '性别',b.`name` as '性格' FROM ceshi_xinxi as a,xingge as b where a.xinge=b.id"
-# s=sql()
-# data_s=s.lianjie_sql("39.107.239.18","root","wdtx.2016","ceshi_test_chenya",sql_yuju3)
-#
-# print(data_s)
-#
-# print(data_s[0])
+
+
+if __name__ == "__main__":
+    go = sql()
+    sql_a = "SELECT SUM(run_time),SUM(pace)/COUNT(run_time),SUM(run_km) FROM `vd_attendance`"
+    aa = go.lianjie_sql("vd_183run", sql_a)
+    pace = aa[0][1]
+    run_time = aa[0][0]
+    run_km = aa[0][2]
+    print("数据报表，平均配速", int(pace / 60), "分", int(pace % 60), "秒")
+    print("数据报表，总时长", int(run_time / 3600), "小时", int(int(run_time % 3600) / 60), "分", int(run_time % 60), "秒")
+    print("数据报表，总距离", run_km, "公里")

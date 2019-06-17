@@ -21,6 +21,11 @@ class InputExcel:
 
 
     def input_excel(self,k):
+        """
+        传内容
+        :param k: 将赋值给表格的数据，用字典的形式传入
+        :return:
+        """
         # print(k)
         for kk in k:
             # print(kk)
@@ -31,6 +36,12 @@ class InputExcel:
         # print(a.row,a.col)
 
     def input_excel_zidingyi(self,hang,k):
+        """
+        给某一行添加一个数组
+        :param hang:
+        :param k:
+        :return:
+        """
         lie=0
         for kk in k:
             InputExcel.sheet1.write( hang,lie, kk)
@@ -47,6 +58,11 @@ class InputExcel:
 
 class OpenExcel:
     def open_excel(self,file_address):
+        """
+
+        :param file_address: 给地址；；；
+        :return:
+        """
         excel_list=[]
         excel=xlrd.open_workbook(filename=file_address)
         '''
@@ -85,3 +101,14 @@ class OpenExcel:
             excel_list.append(xx)
         return excel_list
 
+if __name__ == "__main__":
+    c=OpenExcel().open_excel("D:\linshi\涉及鲜橙收入和金额收入接口.xlsx")
+    print(c)
+    print(c[0])
+    print(c[0][0])
+
+    ccc=InputExcel()
+    ccc.input_excel(c[0])
+    oo=[1,2,3,4]
+    ccc.input_excel_zidingyi(10,oo)
+    ccc.end("D:\linshi\\","test_excel")

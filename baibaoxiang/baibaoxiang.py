@@ -14,6 +14,9 @@ import psutil
 
 
 class geturl():
+    """
+    传入url，作为全局变量
+    """
     value=1
     num=0
     numd=0
@@ -51,11 +54,21 @@ class geturl():
 #**************获取当前页面的url
 
     def Url(self):
-        aurl=0
-        aurl=geturl.llq.current_url
-        print(aurl)
+        """
+        获取当前页面的url
+        :return:
+        """
+        try:
+            aurl=geturl.llq.current_url
+        except:
+            aurl="meiyou"
+        return aurl
         #**************************************获取错误
     def error(self):
+        """
+        获取错误,并进行输出
+        :return:
+        """
         try:
             ee=traceback.format_exc()
             print("报错开始")
@@ -65,6 +78,10 @@ class geturl():
             print("未获取到报错信息")
 # ******************************************获取句柄个数
     def Jubing(self):
+        """
+        获取句柄个数
+        :return: 句柄个数
+        """
         try:
             Handler = geturl.llq.window_handles
         except:
@@ -78,6 +95,10 @@ class geturl():
 
     # ******************************************获取当前标签的句柄
     def Dq_jubing(self):
+        """
+        获取当前标签的句柄
+        :return: 句柄个数
+        """
         try:
             handler = geturl.llq.current_window_handle
         except:
@@ -87,17 +108,23 @@ class geturl():
 
 #******************************************关闭第二个句柄
     def close_jubing_two(self):
+        """
+        关闭第二个句柄
+        :return:
+        """
         handles = geturl.llq.window_handles
         print(handles)
         geturl.llq.switch_to.window(handles[1])
         geturl.llq.close()
-# ******************************************自由切换句柄,句柄从0开始算,这里已经主动-1了
-    def Qhjubing(self,jb):
-        self.jb=jb-1
-        handles=geturl.llq.window_handles
-        geturl.llq.switch_to.window(handles[self.jb])
+
 # ******************************************判断并进行句柄切换,句柄从0开始算,这里已经主动-1了
     def Jubing_go(self,sum,go_int):
+        """
+        判断并进行句柄切换,句柄从0开始算,这里已经主动-1了
+        :param sum: 预计总句柄
+        :param go_int: 切换到第几个句柄
+        :return:
+        """
         new_go_int=go_int-1
         handler = geturl.llq.window_handles
         while len(handler)<sum:
@@ -167,12 +194,12 @@ class geturl():
         except:
             geturl.error(1)
 # #******************************************输入事件
-    def Sname(self,shuxing,mingcheng,shuruzhi,chenggong,shibai,Time=30):
+    def Sname(self,shuxing,name,shuruzhi,ok,game_over,Time=30):
         self.s = shuxing
         self.d = shuruzhi
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -216,10 +243,10 @@ class geturl():
             elif ss == False:
                 print(self.b)
 
-    def C_class_text(self,name,type, class_, text, ok, game_over,Time=30):
+    def C_class_text(self,name,tag_name, class_, text, ok, game_over,Time=30):
         i = 1
         ic = 1
-        c = "//%s"%type+"[@class='%s'" % (class_) + " and text()='%s']" % (text)
+        c = "//%s"%tag_name+"[@class='%s'" % (class_) + " and text()='%s']" % (text)
         while i < Time and ic == 1:
             try:
                 article=geturl.llq.find_element_by_xpath(c)
@@ -240,13 +267,13 @@ class geturl():
             print(ee)
             print("报错结束————————")
 
-    def Sid(self, shuxing, mingcheng, shuruzhi, chenggong, shibai,Time=30):
+    def Sid(self, shuxing, name, shuruzhi, ok, game_over,Time=30):
         # s属性，c控件的称呼，d输入的值，a事件成功的提示语,b事件失败的提示语
         self.s = shuxing
         self.d = shuruzhi
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -317,13 +344,13 @@ class geturl():
         if i> Time:
             print(game_over)
 
-    def Stext(self, shuxing, mingcheng, shuruzhi, chenggong, shibai,Time=30):
+    def Stext(self, shuxing, name, shuruzhi, ok, game_over,Time=30):
         # s属性，c控件的称呼，d输入的值，a事件成功的提示语,b事件失败的提示语
         self.s = shuxing
         self.d = shuruzhi
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -367,13 +394,13 @@ class geturl():
             elif ss == False:
                 print(self.b)
 
-    def Sxpath(self,shuxing,mingcheng,shuruzhi,chenggong,shibai,Time=30):
+    def Sxpath(self,shuxing,name,shuruzhi,ok,game_over,Time=30):
     #s属性，c控件的称呼，d输入的值，a事件成功的提示语,b事件失败的提示语
         self.s=shuxing
         self.d=shuruzhi
-        self.a = chenggong
-        self.b = shibai
-        self.c=mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c=name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -421,12 +448,12 @@ class geturl():
 
 #*******************************************普通点击事件
 
-    def Cid(self,shuxing,mingcheng,chenggong,shibai,Time=30):
+    def Cid(self,shuxing,name,ok,game_over,Time=30):
 #s属性，c代表名称，a成功输出,b失败提示
         self.s=shuxing
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -469,12 +496,12 @@ class geturl():
             elif ss == False:
                 print(self.b)
 
-    def Cname(self,shuxing,mingcheng,chenggong,shibai,Time=30):
+    def Cname(self,shuxing,name,ok,game_over,Time=30):
         #s属性，c代表名称，a成功输出,b失败提示
         self.s=shuxing
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -517,7 +544,7 @@ class geturl():
             elif ss == False:
                 print(self.b)
     '''封装一个获取标签类型的方法'''
-    def CTag_name(self,shuxing,zhengque_text,mingcheng,chenggong,shibai,Time=30):
+    def CTag_name(self,shuxing,zhengque_text,name,ok,game_over,Time=30):
         i = 1
         ss = 1
         while i < Time and ss == 1:
@@ -528,34 +555,34 @@ class geturl():
                     a_gei_value=a.get_attribute("value")
                     a_get_text=a.text
                     if a_gei_value==zhengque_text:
-                        print(mingcheng, "存在，执行下一步")
+                        print(name, "存在，执行下一步")
                         try:
                             a.click()
                         except:
                             a.send_keys(Keys.ENTER)
-                        print(chenggong)
+                        print(ok)
                         ss = 2
                         break
                     if a_get_text==zhengque_text and ss==1:
-                        print(mingcheng, "存在，执行下一步")
+                        print(name, "存在，执行下一步")
                         try:
                             a.click()
                         except:
                             a.send_keys(Keys.ENTER)
-                        print(chenggong)
+                        print(ok)
                         ss = 2
                         break
                 i+=1
             except:
                 ee=traceback.format_exc()
                 print(ee)
-                print(mingcheng, "未找到，执行等待操作")
+                print(name, "未找到，执行等待操作")
                 time.sleep(1)
                 i += 1
         if i > Time:
-            print(shibai)
+            print(game_over)
 
-    def CTag_name_zidingyi(self,tag_name,get_zidingyi,zhengque_text,mingcheng,chenggong,shibai,Time=30):
+    def CTag_name_zidingyi(self,tag_name,get_zidingyi,zhengque_text,name,ok,game_over,Time=30):
         i = 1
         ss = 1
         while i < Time and ss == 1:
@@ -569,29 +596,29 @@ class geturl():
                         a_gei_get_zidingyi=a.get_attribute(get_zidingyi)
                     #print(a_gei_get_zidingyi)
                     if a_gei_get_zidingyi == zhengque_text :
-                        print(mingcheng, "存在，执行下一步")
+                        print(name, "存在，执行下一步")
                         try:
                             a.click()
                         except:
                             a.send_keys(Keys.ENTER)
-                        print(chenggong)
+                        print(ok)
                         ss = 2
                         break
                 if ss==1:
-                    print(mingcheng, "未找到，执行等待操作,当前等待第",i,"秒")
+                    print(name, "未找到，执行等待操作,当前等待第",i,"秒")
                     i+=1
                     time.sleep(1)
             except:
                 ee=traceback.format_exc()
                 print(ee)
-                print(mingcheng, "未找到，执行等待操作,当前等待第", i, "秒")
+                print(name, "未找到，执行等待操作,当前等待第", i, "秒")
                 time.sleep(1)
                 i += 1
         if i > Time:
-            print(shibai)
+            print(game_over)
 
 
-    def STag_name_zidingyi(self,tag_name,get_zidingyi,zhengque_text,input_text,mingcheng,chenggong,shibai,Time=30):
+    def STag_name_zidingyi(self,tag_name,get_zidingyi,zhengque_text,input_text,name,ok,game_over,Time=30):
         i = 1
         ss = 1
         while i < Time and ss == 1:
@@ -601,26 +628,26 @@ class geturl():
                 for a in aa:
                     a_gei_get_zidingyi=a.get_attribute(get_zidingyi)
                     if a_gei_get_zidingyi==zhengque_text:
-                        print(mingcheng, "存在，执行下一步")
+                        print(name, "存在，执行下一步")
                         a.send_keys(input_text)
-                        print(chenggong)
+                        print(ok)
                         ss = 2
                         break
                 if ss==1:
-                    print(mingcheng, "未找到，执行等待操作,当前等待第",i,"秒")
+                    print(name, "未找到，执行等待操作,当前等待第",i,"秒")
                     i+=1
                     time.sleep(1)
             except:
                 ee=traceback.format_exc()
                 print(ee)
-                print(mingcheng, "未找到，执行等待操作,当前等待第", i, "秒")
+                print(name, "未找到，执行等待操作,当前等待第", i, "秒")
                 time.sleep(1)
                 i += 1
         if i > Time:
-            print(shibai)
+            print(game_over)
 
     '''封装一个获取name控件组的方法'''
-    def CClassNameS_danxuan(self,shuxing, zhengque_text, mingcheng, chenggong, shibai,Time=30):
+    def CClassNameS_danxuan(self,shuxing, zhengque_text, name, ok, game_over,Time=30):
         i = 1
         ss=1
         while i < Time and ss==1:
@@ -630,32 +657,32 @@ class geturl():
                 for a in aa:
                     #print(a.text)
                     if a.text == zhengque_text or a.get_attribute("value")==zhengque_text:
-                        print(mingcheng, "存在，执行下一步")
+                        print(name, "存在，执行下一步")
                         try:
                             a.click()
                         except:
                             a.send_keys(Keys.ENTER)
-                        print(chenggong)
+                        print(ok)
                         ss=2
                 i+=1
                 time.sleep(1)
             except:
                 ee = traceback.format_exc()
-                print(mingcheng, "未找到，执行等待操作,当前等待",i,"秒")
+                print(name, "未找到，执行等待操作,当前等待",i,"秒")
                 time.sleep(1)
                 i += 1
         if i > Time:
-            print(shibai)
+            print(game_over)
 
 
 
     '''封装一个获取text控件组的方法'''
 
-    def CTextS(self,shuxing, mingcheng, chenggong, shibai,Time=30):
+    def CTextS(self,shuxing, name, ok, game_over,Time=30):
         self.shuxing=shuxing
-        self.mingcheng=mingcheng
-        self.chenggong=chenggong
-        self.shibai=shibai
+        self.name=name
+        self.ok=ok
+        self.game_over=game_over
         xs = 1
         xx=1
         while xs < Time and xx==1:
@@ -665,16 +692,16 @@ class geturl():
                 if len(aa)>0:
                     for ixs in aa:
                         if ixs.text == self.shuxing:
-                            print(self.mingcheng, "存在，执行下一步")
+                            print(self.name, "存在，执行下一步")
                             try:
                                 ixs.click()
                             except:
                                 ixs.send_keys(Keys.ENTER)
-                            print(self.chenggong)
+                            print(self.ok)
                             xx = 2
                             break
                 else:
-                    print(self.mingcheng, "未找到，执行等待操作")
+                    print(self.name, "未找到，执行等待操作")
                     xs+=1
                 time.sleep(1)
             except:
@@ -683,13 +710,13 @@ class geturl():
                 time.sleep(1)
                 xs += 1
         if xs > Time:
-            print(self.shibai)
+            print(self.game_over)
 
-    def CTextS_Key(self,shuxing, mingcheng, chenggong, shibai,Time=30):
+    def CTextS_Key(self,shuxing, name, ok, game_over,Time=30):
         self.shuxing=shuxing
-        self.mingcheng=mingcheng
-        self.chenggong=chenggong
-        self.shibai=shibai
+        self.name=name
+        self.ok=ok
+        self.game_over=game_over
         xs = 1
         xx=1
         while xs < Time and xx==1:
@@ -699,13 +726,13 @@ class geturl():
                 if len(aa)>0:
                     for ixs in aa:
                         if ixs.text == self.shuxing:
-                            print(self.mingcheng, "存在，执行下一步")
+                            print(self.name, "存在，执行下一步")
                             ixs.send_keys(Keys.ENTER)
-                            print(self.chenggong)
+                            print(self.ok)
                             xx = 2
                             break
                 else:
-                    print(self.mingcheng, "未找到，执行等待操作")
+                    print(self.name, "未找到，执行等待操作")
                     xs+=1
                 time.sleep(1)
             except:
@@ -714,7 +741,7 @@ class geturl():
                 time.sleep(1)
                 xs += 1
         if xs > Time:
-            print(self.shibai)
+            print(self.game_over)
 
     def CClass(self,shuxing, name, ok, game_over,Time=30):
         i = 1
@@ -734,12 +761,12 @@ class geturl():
             print(game_over)
 
 
-    def Ctext(self,shuxing,mingcheng,chenggong,shibai,Time=30):
+    def Ctext(self,shuxing,name,ok,game_over,Time=30):
 #s属性，c代表名称，a成功输出,b失败提示
         self.s=shuxing
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -785,11 +812,11 @@ class geturl():
 
 
 
-    def Cxpath(self,shuxing,mingcheng,chenggong,shibai,Time=30):
+    def Cxpath(self,shuxing,name,ok,game_over,Time=30):
         self.s=shuxing
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -831,11 +858,11 @@ class geturl():
             elif ss == False:
                 print(self.b)
 
-    def Cxpath_cler(self,shuxing,mingcheng,chenggong,shibai,Time=30):
+    def Cxpath_cler(self,shuxing,name,ok,game_over,Time=30):
         self.s=shuxing
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -877,11 +904,11 @@ class geturl():
             elif ss == False:
                 print(self.b)
 #****************************************************特殊点击事件
-    def CId(self,shuxing,mingcheng,chenggong,shibai,Time=30):
+    def CId(self,shuxing,name,ok,game_over,Time=30):
         self.s = shuxing
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -921,11 +948,11 @@ class geturl():
             elif ss == False:
                 print(self.b)
 
-    def CName(self,shuxing,mingcheng,chenggong,shibai,Time=30):
+    def CName(self,shuxing,name,ok,game_over,Time=30):
         self.s = shuxing
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -995,11 +1022,11 @@ class geturl():
         if i> Time:
             print(game_over)
 
-    def CText(self,shuxing,mingcheng,chenggong,shibai,Time=30):
+    def CText(self,shuxing,name,ok,game_over,Time=30):
         self.s = shuxing
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -1066,11 +1093,11 @@ class geturl():
         if i> Time:
             print(game_over)
 
-    def CXpath(self,shuxing,mingcheng,chenggong,shibai,Time=30):
+    def CXpath(self,shuxing,name,ok,game_over,Time=30):
         self.s = shuxing
-        self.a = chenggong
-        self.b = shibai
-        self.c = mingcheng
+        self.a = ok
+        self.b = game_over
+        self.c = name
         geturl.num += 1
         i = 1
         xxx = 0
@@ -1112,12 +1139,12 @@ class geturl():
 
 
     '''单选框的操作'''
-    def Danxuan(self, shuxing, mingcheng, jiaobiao, chenggong, shibai,Time=30):
+    def Danxuan(self, shuxing, name, jiaobiao, ok, game_over,Time=30):
         self.shuxing = shuxing
-        self.mingcheng = mingcheng
+        self.name = name
         self.jiaobiao = jiaobiao
-        self.chenggong = chenggong
-        self.shibai = shibai
+        self.ok = ok
+        self.game_over = game_over
         '''这里0-4代表着：实体商品,虚拟商品,虚拟物品(卡密),批发商品,记次/时商品'''
         '''定义一个数组，将获取到的name=type的控件集，保存在数组中'''
         num = 1
@@ -1126,15 +1153,15 @@ class geturl():
             try:
                 geturl.llq.find_elements_by_name(self.shuxing)
                 xxx = 1
-                print(self.mingcheng, "存在，执行下一步操作")
+                print(self.name, "存在，执行下一步操作")
                 try:
                     s = geturl.llq.find_elements_by_name(self.shuxing)
                     '''使用数组定位的形式，对指定的控件进行点击'''
                     s[self.jiaobiao].click()
                 except:
-                    print(self.shibai)
+                    print(self.game_over)
             except:
-                print(self.mingcheng, "不存在，执行等待操作，当前等待", num, "秒")
+                print(self.name, "不存在，执行等待操作，当前等待", num, "秒")
                 num += 1
                 time.sleep(1)
         if num > Time:
@@ -1143,7 +1170,7 @@ class geturl():
                 '''使用数组定位的形式，对指定的控件进行点击'''
                 s[self.jiaobiao].click()
             except:
-                print(self.mingcheng, "不存在，执行等待操作，当前等待", num, "秒")
+                print(self.name, "不存在，执行等待操作，当前等待", num, "秒")
         ss = 0
         '''定义一个for循环，来判断哪一个控件被选中了'''
         for i in s:
@@ -1153,10 +1180,10 @@ class geturl():
                 print("Bug--无法找到控件们")
             if kk == False:
                 if s[self.jiaobiao] == s[ss]:
-                    print(self.shibai)
+                    print(self.game_over)
             if kk == True:
                 if s[self.jiaobiao] == s[ss]:
-                    print(self.chenggong)
+                    print(self.ok)
             ss += 1
 
     def C_xialakuang_zidingyi_text(self,shuxing, ok_text, ok_tag_name, name, ok, game_over,Time=30):
@@ -1282,3 +1309,6 @@ class geturl():
         except:
             geturl.error()
 
+if __name__ == "__main__":
+    go=geturl("https://www.baidu.com")
+    go.CTag_name_zidingyi(1,2,3,4,5,6)

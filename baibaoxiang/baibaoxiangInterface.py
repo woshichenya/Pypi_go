@@ -5,16 +5,16 @@ from baibaoxiang import excel
 
 
 
-class go:
+class Interface_go:
     hang = 0
     lie = 0
     excel_input=excel.InputExcel()
     def leiji(self):
         # print(go.k, ",", go.l)
-        go.lie += 1
-        if go.lie >= 3:
-            go.hang += 1
-            go.lie = 0
+        Interface_go.lie += 1
+        if Interface_go.lie >= 3:
+            Interface_go.hang += 1
+            Interface_go.lie = 0
     def __init__(self):
         print("开始接口连接过程。。。")
 
@@ -41,7 +41,7 @@ class go:
                 if len(fanhui) == 0:
                     fanhui = str(r.json())
             jieguo = [name, url, str(data), r.status_code, fanhui,on_to_over_time]
-            go.excel_input.input_excel(jieguo)
+            Interface_go.excel_input.input_excel(jieguo)
         except:
             print("无法输出json，转换成输出text")
             print(r.text)
@@ -52,7 +52,7 @@ class go:
                 if len(fanhui) == 0:
                     fanhui = r.text
             jieguo = [name, url, str(data), r.status_code, fanhui]
-            go.excel_input.input_excel(jieguo)
+            Interface_go.excel_input.input_excel(jieguo)
         return r
 
     def get(self,url, data, header,name):
@@ -76,7 +76,7 @@ class go:
                 if len(fanhui) == 0:
                     fanhui = str(r.json())
             jieguo = [name, url, str(data), r.status_code, fanhui]
-            go.excel_input.input_excel(jieguo)
+            Interface_go.excel_input.input_excel(jieguo)
         except:
             print("无法输出json，转换成输出text")
             print(r.text)
@@ -87,14 +87,14 @@ class go:
                 if len(fanhui) == 0:
                     fanhui = r.text
             jieguo = [name, url, str(data), r.status_code, fanhui,on_to_over_time]
-            go.excel_input.input_excel(jieguo)
+            Interface_go.excel_input.input_excel(jieguo)
         return r
 
 
 
-class Interface_go:
-    def interface_go(self,open_excel_file_address,input_excel_name,input_excel_address):
-        i=go()
+class Interface_Excel_go:
+    def interface_excel_go(self,open_excel_file_address,input_excel_name,input_excel_address):
+        i=Interface_go()
         goi=excel.OpenExcel()
         # t=go.open_excel('D:\linshi\涉及鲜橙收入和金额收入接口.xlsx')
         # t=go.open_excel('D:\linshi\工作簿1.xlsx')
@@ -106,7 +106,7 @@ class Interface_go:
         for x in t:
             # print(x)
             name=x[0]
-            if "http://" in x[1] or 'http://' in x[1]:
+            if "http://" not in x[1] or 'http://' not in x[1]:
                 address = "http://" + x[1] + x[2]
             else:
                 address="http://"+x[1]+x[2]
@@ -126,3 +126,10 @@ class Interface_go:
         excel.InputExcel().end(input_excel_address,input_excel_name)
 
 
+if __name__ == "__main__":
+    go=Interface_go()
+    go.post("url","data","header","name")
+    excel.InputExcel().end("","")
+
+    go2=Interface_Excel_go()
+    go2.interface_excel_go("D:\linshi\涉及鲜橙收入和金额收入接口.xlsx","特殊","D:\\linshi\\")

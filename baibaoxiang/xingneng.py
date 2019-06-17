@@ -43,3 +43,5 @@ class Bingfa_test:
 
 
 
+if __name__ == "__main__":
+    Bingfa_test().bingfa_test_go("url","data","name","多少个用户",headler="headler")
