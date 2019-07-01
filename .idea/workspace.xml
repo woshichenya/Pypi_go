@@ -25,8 +25,8 @@
       <file leaf-file-name="baibaoxiangMobile.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baibaoxiang/baibaoxiangMobile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1821">
-              <caret line="400" column="33" lean-forward="true" selection-start-line="400" selection-start-column="33" selection-end-line="400" selection-end-column="33" />
+            <state relative-caret-position="8646">
+              <caret line="400" column="33" lean-forward="false" selection-start-line="400" selection-start-column="33" selection-end-line="400" selection-end-column="33" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -37,22 +37,10 @@
       <file leaf-file-name="sys_powel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baibaoxiang/sys_powel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            <state relative-caret-position="792">
+              <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="femail.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baibaoxiang/femail.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
-              <folding>
-                <element signature="e#16#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,18 +49,30 @@
       <file leaf-file-name="excel_xlwt.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baibaoxiang/excel_xlwt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+            <state relative-caret-position="924">
+              <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baibaoxiang.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="baibaoxiang.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/baibaoxiang/baibaoxiang.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="1313" column="38" lean-forward="true" selection-start-line="1313" selection-start-column="38" selection-end-line="1313" selection-end-column="38" />
+            <state relative-caret-position="284">
+              <caret line="715" column="28" lean-forward="true" selection-start-line="715" selection-start-column="28" selection-end-line="715" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xingneng.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baibaoxiang/xingneng.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="968">
+              <caret line="46" column="79" lean-forward="false" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -81,8 +81,8 @@
       <file leaf-file-name="baibaoxiangInterface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baibaoxiang/baibaoxiangInterface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-511">
-              <caret line="88" column="82" lean-forward="true" selection-start-line="88" selection-start-column="82" selection-end-line="88" selection-end-column="82" />
+            <state relative-caret-position="1870">
+              <caret line="88" column="82" lean-forward="false" selection-start-line="88" selection-start-column="82" selection-end-line="88" selection-end-column="82" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -93,8 +93,8 @@
       <file leaf-file-name="excel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baibaoxiang/excel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="111" column="16" lean-forward="true" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+            <state relative-caret-position="2398">
+              <caret line="111" column="16" lean-forward="false" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -102,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+            <state relative-caret-position="814">
+              <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -115,8 +115,8 @@
       <file leaf-file-name="image.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baibaoxiang/image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+            <state relative-caret-position="220">
+              <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -127,10 +127,10 @@
       <file leaf-file-name="sql.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baibaoxiang/sql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="594">
+              <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
               <folding>
-                <marker date="1560763143681" expanded="true" signature="944:1023" ph="SELECT SUM(r... vd_attendance" />
+                <marker date="1561945246281" expanded="true" signature="949:1028" ph="SELECT SUM(r... vd_attendance" />
               </folding>
             </state>
           </provider>
@@ -176,12 +176,12 @@
         <option value="$PROJECT_DIR$/baibaoxiang/baibaoxiangInterface.py" />
         <option value="$PROJECT_DIR$/baibaoxiang/sys_powel.py" />
         <option value="$PROJECT_DIR$/baibaoxiang/xingneng.py" />
-        <option value="$PROJECT_DIR$/baibaoxiang/sql.py" />
         <option value="$PROJECT_DIR$/baibaoxiang/femail.py" />
         <option value="$PROJECT_DIR$/baibaoxiang/excel_xlwt.py" />
         <option value="$PROJECT_DIR$/baibaoxiang/baibaoxiangMobile.py" />
         <option value="$PROJECT_DIR$/baibaoxiang/excel.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/baibaoxiang/sql.py" />
       </list>
     </option>
   </component>
@@ -191,7 +191,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="310" />
     <option name="y" value="8" />
     <option name="width" value="1481" />
@@ -212,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,22 +225,11 @@
               <item name="Pypi_go" type="462c0819:PsiDirectoryNode" />
               <item name="baibaoxiang" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Pypi_go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pypi_go" type="462c0819:PsiDirectoryNode" />
-              <item name="chenyabaibaoxiang.egg-info" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pypi_go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pypi_go" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -397,7 +387,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -405,9 +395,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20415778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -431,7 +421,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -439,9 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="e#16#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -449,7 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -465,7 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="22" column="70" lean-forward="false" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -503,7 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -511,9 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="e#16#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -521,7 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -537,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="22" column="70" lean-forward="false" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -582,7 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -590,7 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -606,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="22" column="70" lean-forward="false" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -614,9 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="e#16#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -624,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="22" column="70" lean-forward="false" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,7 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -651,117 +623,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/baibaoxiangInterface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="129" column="7" lean-forward="false" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/baibaoxiangMobile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="396" column="7" lean-forward="false" selection-start-line="396" selection-start-column="7" selection-end-line="396" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="88" column="7" lean-forward="false" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/excel_xlwt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="40" column="7" lean-forward="false" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/femail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="72" column="7" lean-forward="false" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/geckodriver.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/sql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/sys_powel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/xingneng.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNM/baibaoxiang.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="1284" column="0" lean-forward="false" selection-start-line="1284" selection-start-column="0" selection-end-line="1285" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TestNM/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/TestNM/baibaoxiangInterface.py" />
+    <entry file="file://$PROJECT_DIR$/TestNM/baibaoxiangMobile.py" />
+    <entry file="file://$PROJECT_DIR$/TestNM/excel.py" />
+    <entry file="file://$PROJECT_DIR$/TestNM/excel_xlwt.py" />
+    <entry file="file://$PROJECT_DIR$/TestNM/femail.py" />
+    <entry file="file://$PROJECT_DIR$/TestNM/geckodriver.log" />
+    <entry file="file://$PROJECT_DIR$/TestNM/image.py" />
+    <entry file="file://$PROJECT_DIR$/TestNM/sql.py" />
+    <entry file="file://$PROJECT_DIR$/TestNM/sys_powel.py" />
+    <entry file="file://$PROJECT_DIR$/TestNM/xingneng.py" />
+    <entry file="file://$PROJECT_DIR$/TestNM/baibaoxiang.py" />
     <entry file="file://$PROJECT_DIR$/baibaoxiang/geckodriver.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baibaoxiang/xingneng.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="46" column="79" lean-forward="true" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,24 +646,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baibaoxiang/femail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
-          <folding>
-            <element signature="e#16#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1386">
+          <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baibaoxiang/baibaoxiangMobile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1821">
-          <caret line="400" column="33" lean-forward="true" selection-start-line="400" selection-start-column="33" selection-end-line="400" selection-end-column="33" />
+        <state relative-caret-position="8646">
+          <caret line="400" column="33" lean-forward="false" selection-start-line="400" selection-start-column="33" selection-end-line="400" selection-end-column="33" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -795,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baibaoxiang/baibaoxiangInterface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-511">
-          <caret line="88" column="82" lean-forward="true" selection-start-line="88" selection-start-column="82" selection-end-line="88" selection-end-column="82" />
+        <state relative-caret-position="1870">
+          <caret line="88" column="82" lean-forward="false" selection-start-line="88" selection-start-column="82" selection-end-line="88" selection-end-column="82" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -805,28 +678,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baibaoxiang/sys_powel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="792">
+          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baibaoxiang/sql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-          <folding>
-            <marker date="1560763143681" expanded="true" signature="944:1023" ph="SELECT SUM(r... vd_attendance" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baibaoxiang/image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        <state relative-caret-position="220">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -837,41 +700,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="233" column="4" lean-forward="false" selection-start-line="233" selection-start-column="4" selection-end-line="233" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baibaoxiang/excel_xlwt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baibaoxiang/excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="111" column="16" lean-forward="true" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+        <state relative-caret-position="2398">
+          <caret line="111" column="16" lean-forward="false" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baibaoxiang/baibaoxiang.py">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="1313" column="38" lean-forward="true" selection-start-line="1313" selection-start-column="38" selection-end-line="1313" selection-end-column="38" />
+        <state relative-caret-position="814">
+          <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/baibaoxiang/excel_xlwt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+        <state relative-caret-position="924">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baibaoxiang/xingneng.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="46" column="79" lean-forward="false" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baibaoxiang/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding>
+            <marker date="1561945246281" expanded="true" signature="949:1028" ph="SELECT SUM(r... vd_attendance" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baibaoxiang/baibaoxiang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="715" column="28" lean-forward="true" selection-start-line="715" selection-start-column="28" selection-end-line="715" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

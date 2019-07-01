@@ -2,7 +2,7 @@ import pymysql
 
 
 class sql:
-    def lianjie_sql(self, sql_shujuku_name, sql_yuju):
+    def lianjie_sql(self, sql_shujuku_name, sql_yuju,*sql):
         '''
         :param sql_shujuku_name:
         :param sql_yuju:
