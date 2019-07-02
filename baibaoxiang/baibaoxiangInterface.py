@@ -20,7 +20,7 @@ class Interface_go:
 
 
 
-    def post(self,url, data, header,name):
+    def post(self,url, data="", header="",name=""):
         r = requests.post(url, data=data, headers=header)
         if "\"msg\":\"ok\"" in r.text and r.status_code == 200:
             print(name,"成功")
@@ -31,7 +31,13 @@ class Interface_go:
                 print(r.text)
         else:
             print(name,"未成功*****************************************************************************")
-            print(r.json())
+            try:
+                print(r.json())
+            except:
+                try:
+                    print(r.text)
+                except:
+                    print("无法输出访问结果")
         try:
             on_to_over_time = r.elapsed.total_seconds()
             fanhui = re.findall("\{\"code\":.*?.*", str(r.json()))
@@ -55,7 +61,7 @@ class Interface_go:
             Interface_go.excel_input.input_excel(jieguo)
         return r
 
-    def get(self,url, data, header,name):
+    def get(self,url, data="", header="",name=""):
         r = requests.get(url, data=data, headers=header)
         if "\"msg\":\"ok\"" in r.text and r.status_code == 200:
             print(name,"成功")
@@ -66,7 +72,13 @@ class Interface_go:
                 print(r.text)
         else:
             print(name,"未成功*****************************************************************************")
-            print(r.json())
+            try:
+                print(r.json())
+            except:
+                try:
+                    print(r.text)
+                except:
+                    print("无法输出访问结果")
         try:
             on_to_over_time = r.elapsed.total_seconds()
             fanhui = re.findall("\{\"code\":.*?.*", str(r.json()))

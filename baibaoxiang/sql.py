@@ -2,7 +2,7 @@ import pymysql
 
 
 class sql:
-    def lianjie_sql(self, sql_shujuku_name, sql_yuju,*sql):
+    def lianjie_sql(self, sql_shujuku_name, sql_yuju,sqlserver):
         '''
         :param sql_shujuku_name:
         :param sql_yuju:
@@ -11,14 +11,14 @@ class sql:
         # self.sql_name=sql_name
         # self.sql_paword=sql_pasword
         '''
-        self.sql_shujuku_name = sql_shujuku_name
-        self.sql_yuju = sql_yuju
+
+        sql=sqlserver
         '''打开数据库连接'''
-        db = pymysql.connect("39.107.239.18", "root", "wdtx.2016", self.sql_shujuku_name, charset='utf8')
+        db = pymysql.connect(sql["adress"], sql["name"], sql["password"], sql_shujuku_name, charset='utf8')
         '''使用cursor()方法获取操作游标'''
         cursor = db.cursor()
         '''执行sql语句'''
-        cursor.execute(self.sql_yuju)
+        cursor.execute(sql_yuju)
         '''
         #获取一行输出结果
         data = cursor.fetchone()
@@ -35,9 +35,15 @@ class sql:
 
 
 if __name__ == "__main__":
+    sql_18 = {
+        "adress": "39.107.239.18",
+        "name": "root",
+        "password": "wdtx.2016"
+
+    }
     go = sql()
     sql_a = "SELECT SUM(run_time),SUM(pace)/COUNT(run_time),SUM(run_km) FROM `vd_attendance`"
-    aa = go.lianjie_sql("vd_183run", sql_a)
+    aa = go.lianjie_sql("vd_183run", sql_a,sql_18)
     pace = aa[0][1]
     run_time = aa[0][0]
     run_km = aa[0][2]
